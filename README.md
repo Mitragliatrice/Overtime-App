@@ -17,3 +17,5 @@
 ### UI:
 
 - Bootstrap -> formatting
+
+### Refactor todos:
