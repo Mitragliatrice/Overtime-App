@@ -58,3 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ## Customer Gems
 # Authentication
 gem 'devise', '~> 4.3'
+# Boostrap Shiz
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
