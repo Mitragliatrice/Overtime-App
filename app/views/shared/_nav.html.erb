@@ -3,10 +3,10 @@
       </div>
       
       <ul class="custom-nav nav nav-pills">
-				<li class="active">
+				<li class="<%= active?(root_path) %>">
 					<%= link_to 'Home', root_path %>
 				</li>
-				<li>
+				<li class="<%= active?(posts_path) %>">
 					<%= link_to 'Time Entries', posts_path %>
 				</li>
 				<li class="dropdown pull-right">
@@ -16,7 +16,7 @@
 							<%= link_to 'Edit Details', edit_user_registration_path %>
             </li>
             <li class="divider">
-            </li
+            </li>
             <li>
 							<%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
 						</li>
