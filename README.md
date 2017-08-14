@@ -6,7 +6,7 @@
 
 - Post -> date:date rationale:text
 - |X| User -> Devise
-- |X| AdminUser -> STI
+- |X| rails gAdminUser -> STI
 
 ## Features:
 ### Approval Workflow
