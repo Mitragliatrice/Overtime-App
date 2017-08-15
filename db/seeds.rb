@@ -6,15 +6,15 @@ end
 puts "Created 1 test user"
 
 1.times do |adminuser| 
-    AdminUser.create!(email: "admintext@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "Test", last_name: "User")
+    AdminUser.create!(email: "mathews.colton@gmail.com", password: "Colton11!", password_confirmation: "Colton11!", first_name: "Jon", last_name: "Snow")
 end
 
 puts "Created 1 test admin user"
 
-5.times do |post| 
-    Post.create!(date: Date.today, rationale: 'Test rationale number #{post}', user: User.last)
+100.times do |post| 
+    Post.create!(date: Date.today, rationale: "Test rationale number #{post}", user: User.last)
 end
 
-puts "Created 5 test posts"
+puts "Created 100 test posts"
 
 
