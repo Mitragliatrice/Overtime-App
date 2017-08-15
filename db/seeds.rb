@@ -1,6 +1,6 @@
 
 1.times do |user|
-    User.create!(email: "text@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "Test", last_name: "User")
+    User.create!(email: "tester@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "Test", last_name: "User")
 end
 
 puts "Created 1 test user"
