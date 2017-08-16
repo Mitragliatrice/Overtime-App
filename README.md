@@ -23,3 +23,4 @@
 ### Refactor todos:
 
 - Refactor 'user association' integration test in post-spec 
+- Block non-admin and guests from Adminstrate Dash.

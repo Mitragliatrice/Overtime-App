@@ -62,4 +62,9 @@ gem 'devise', '~> 4.3'
 # Boostrap Shiz
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+# Growl Notifications
 gem 'gritter', '~> 1.2'
+# Admin Console and Functionality
+gem 'administrate', '~> 0.8.1'
+# Needed by Administrate
+gem 'bourbon', '~> 4.3', '>= 4.3.4'
