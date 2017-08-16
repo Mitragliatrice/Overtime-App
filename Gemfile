@@ -62,3 +62,4 @@ gem 'devise', '~> 4.3'
 # Boostrap Shiz
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'gritter', '~> 1.2'

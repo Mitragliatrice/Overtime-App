@@ -13,9 +13,9 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user_id = current_user.id
     if @post.save
-      redirect_to @post, :notice => "Thank you. You good lookin person you."
+      redirect_to @post, :notice => "Post created successfully."
     else 
-      render :new
+      render :new, :notice => "There was an error, post not created."
     end
   end
 
@@ -24,9 +24,9 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      redirect_to @post, :notice => "Thank you. You good lookin person you."
+      redirect_to @post, :notice => "Post updated successfully."
     else
-      render :edit
+      render :edit, :notice => "There was an error, post not updated."
     end
   end
 
@@ -35,7 +35,7 @@ class PostsController < ApplicationController
 
   def destroy
     if @post.destroy
-      redirect_to posts_path, :notice => "Thank you. You good lookin person you."
+      redirect_to posts_path, :notice => "Successfully deleted a post.."
     else
       render posts_path, :notice => "There was an error, post not deleted."
     end

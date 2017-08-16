@@ -17,6 +17,8 @@
 ### UI:
 
 - |X| Bootstrap -> formatting
+- Icons from Font Awesome
+- |X| Update the styles for forms
 
 ### Refactor todos:
 
