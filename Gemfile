@@ -68,3 +68,5 @@ gem 'gritter', '~> 1.2'
 gem 'administrate', '~> 0.8.1'
 # Needed by Administrate
 gem 'bourbon', '~> 4.3', '>= 4.3.4'
+# Permissions (Alternative to Petergate)
+gem 'pundit', '~> 1.1'
