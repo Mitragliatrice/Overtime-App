@@ -12,8 +12,4 @@ FactoryGirl.define do
     status "pending"
     user
   end
-
-
-
-
 end
