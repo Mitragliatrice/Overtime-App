@@ -73,4 +73,4 @@ gem 'pundit', '~> 1.1'
 # Text Agent
 gem 'twilio-ruby', '~> 5.1', '>= 5.1.1'
 # Secrets File
-gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1', :groups => [:development, :test]
