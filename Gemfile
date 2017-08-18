@@ -70,3 +70,7 @@ gem 'administrate', '~> 0.8.1'
 gem 'bourbon', '~> 4.3', '>= 4.3.4'
 # Permissions (Alternative to Petergate)
 gem 'pundit', '~> 1.1'
+# Text Agent
+gem 'twilio-ruby', '~> 5.1', '>= 5.1.1'
+# Secrets File
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
