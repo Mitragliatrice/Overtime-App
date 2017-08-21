@@ -21,6 +21,8 @@
 - Icons from Font Awesome
 - |X| Update the styles for forms
 
-### Refactor todos:
- 
-- Refactor posts/_form for admin user with status
+## TODOS:
+- Integrate validation for phone attribute in User:
+    - No spaces or dashes
+    - exactly 10 characters
+    - all characters have to be a number
