@@ -1,12 +1,22 @@
 
 1.times do |adminuser| 
-    AdminUser.create!(email: "mathews.colton@gmail.com", password: "Colton11!", password_confirmation: "Colton11!", first_name: "Jon", last_name: "Snow")
+    AdminUser.create!(email: "mathews.colton@gmail.com", 
+                      password: "Colton11!", 
+                      password_confirmation: "Colton11!", 
+                      first_name: "Jon", 
+                      last_name: "Snow", 
+                      phone: "3853233071")
 end
 
 puts "Created 1 test admin user"
 
 1.times do |user|
-    User.create!(email: "tester@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "Test", last_name: "User")
+    User.create!(email: "tester@test.com", 
+                password: "asdfasdf", 
+                password_confirmation: "asdfasdf", 
+                first_name: "Test", 
+                last_name: "User",
+                phone: "3853233071")
 end
 
 puts "Created 1 test user"
