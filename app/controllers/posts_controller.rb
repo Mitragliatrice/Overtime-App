@@ -21,8 +21,8 @@ class PostsController < ApplicationController
 
   def approve
     @post.approved!
+    authorize @post
     redirect_to root_path, notice: "The post has been approved."
-    authroize @post
   end
 
   def edit
