@@ -75,5 +75,5 @@ gem 'twilio-ruby', '~> 5.1', '>= 5.1.1'
 # Secrets Keeper..... SHHHHHH
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1', :groups => [:development, :test]
 # Pagination
-gem 'kaminari', '~> 1.0', '>= 1.0.1'
+gem 'kaminari'
 
