@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-    before_action :set_post, only: [:show, :edit, :update, :destroy]
+    before_action :set_post, only: [:show, :edit, :update, :destroy, :approve]
 
     def index
       @posts = Post.posts_by(current_user).page(params[:page]).per(10)
@@ -17,6 +17,12 @@ class PostsController < ApplicationController
     else 
       render :new, :notice => "There was an error, post not created."
     end
+  end
+
+  def approve
+    @post.approved!
+    redirect_to root_path, notice: "The post has been approved."
+    authroize @post
   end
 
   def edit
