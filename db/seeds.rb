@@ -22,7 +22,7 @@ end
 puts "Created 1 test user"
 
 100.times do |post| 
-    Post.create!(date: Date.today, rationale: "Test rationale number #{post}", user: User.last, overtime_request: 2.5)
+    Post.create!(date: Date.today, rationale: "Amet quis labore incididunt labore. #{post} ", user: User.last, overtime_request: 2.5)
 end
 
 puts "Created 100 test posts"
