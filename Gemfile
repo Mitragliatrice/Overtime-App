@@ -77,5 +77,7 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1', :groups => [:development, :test]
 # Pagination
 gem 'kaminari'
 
+gem 'rails_12factor'
+
 ruby "2.4.0"
 
