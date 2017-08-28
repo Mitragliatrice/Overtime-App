@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://rubygems.org' 
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -76,4 +76,6 @@ gem 'twilio-ruby', '~> 5.1', '>= 5.1.1'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1', :groups => [:development, :test]
 # Pagination
 gem 'kaminari'
+
+ruby "2.4.0"
 
