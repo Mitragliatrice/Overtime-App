@@ -21,16 +21,16 @@ end
 
 puts "Created 1 test user"
 
-100.times do |post| 
+15.times do |post| 
     Post.create!(date: Date.today, rationale: "Amet quis labore incididunt labore. #{post} ", user: User.last, overtime_request: 2.5)
 end
 
-puts "Created 100 test posts"
+puts "Created 15 test posts"
 
-100.times do |audit_log|
+15.times do |audit_log|
   AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 6.days))
 end
 
-puts "Created 100 audit logs"
+puts "Created 15 audit logs"
 
 
