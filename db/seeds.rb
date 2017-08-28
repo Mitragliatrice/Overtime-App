@@ -27,10 +27,12 @@ end
 
 puts "Created 15 test posts"
 
-15.times do |audit_log|
-  AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 6.days))
-end
 
-puts "Created 15 audit logs"
+  AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 6.days))
+  AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 13.days))
+  AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 20.days))
+
+
+puts "Created 3 audit logs"
 
 
