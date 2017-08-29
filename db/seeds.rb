@@ -4,14 +4,14 @@
                       password: "Colton11!", 
                       password_confirmation: "Colton11!", 
                       first_name: "Test", 
-                      last_name: "User", 
+                      last_name: "Employee", 
                       phone: "3853233071")
 end
 
-puts "Created 1 test admin user"
+puts "Created 1 test admin Employee"
 
-1.times do |user|
-    User.create!(email: "tester@test.com", 
+1.times do |employee|
+    Employee.create!(email: "tester@test.com", 
                 password: "asdfasdf", 
                 password_confirmation: "asdfasdf", 
                 first_name: "Jon", 
@@ -19,16 +19,16 @@ puts "Created 1 test admin user"
                 phone: "3853233071")
 end
 
-puts "Created 1 test user"
+puts "Created 1 test Employee"
 
-  AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 6.days))
-  AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 13.days))
-  AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 20.days))
+  AuditLog.create!(user_id: Employee.last.id, status: 0, start_date: (Date.today - 6.days))
+  AuditLog.create!(user_id: Employee.last.id, status: 0, start_date: (Date.today - 13.days))
+  AuditLog.create!(user_id: Employee.last.id, status: 0, start_date: (Date.today - 20.days))
   
 puts "Created 3 audit logs"
 
 15.times do |post| 
-    Post.create!(date: Date.today, rationale: "Amet quis labore incididunt labore. #{post} ", user: User.last, overtime_request: 2.5)
+    Post.create!(date: Date.today, rationale: "Amet quis labore incididunt labore. #{post} ", user_id: Employee.last.id, overtime_request: 2.5)
 end
 
 puts "Created 15 test posts"
