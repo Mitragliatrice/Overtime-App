@@ -1,24 +1,25 @@
 <div class="logo">
   <h1> Time Tracker </h1>
 </div>
-<!-- TODO -->
 <% if current_user %>
 <ul class="custom-nav nav nav-tabs">
   <li class="<%= active?(root_path) %>">
-    <%= link_to 'Home', root_path %>
+    <%= link_to '', root_path, class: 'glyphicon glyphicon-home' %>
   </li>
+  <% if current_user.try(:type) != "AdminUser" %>
   <li class="<%= active?(posts_path) %>">
-    <%= link_to 'Time Entries', posts_path %>
+    <%= link_to 'Entries', posts_path %>
   </li>
   <li class="<%= active?(new_post_path) %>">
     <%= link_to 'Request Overtime', new_post_path, id: "new_post_from_nav" %>
   </li>
+  <% end %>
 <%= render 'shared/audit_log_tab'  %>
   <li class="dropdown pull-right">
       <a href="#" data-toggle="dropdown" class="dropdown-toggle">Options<strong class="caret"></strong></a>
     <ul class="dropdown-menu">
-      <% if current_user.try(:type) == "AdminUser"%>
-      <!-- TODO -->
+            <!-- TODO -->
+      <% if current_user.try(:type) == "AdminUser"%>\
       <li>
         <%= link_to "Admin Dashboard", admin_root_path %>
       </li>
@@ -33,5 +34,4 @@
   </li>
 </ul>
 <% end %>
-<!-- TODO -->
 
