@@ -1,5 +1,4 @@
-<% if policy(AuditLog).index? %>
+
   <li class="<%= active?(audit_logs_path) %>">
     <%= link_to 'Audit Log', audit_logs_path %>
   </li>
-<% end %>
