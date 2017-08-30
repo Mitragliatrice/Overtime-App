@@ -79,5 +79,7 @@ gem 'kaminari'
 
 gem 'rails_12factor'
 
+gem 'newrelic_rpm'
+
 ruby "2.4.0"
 
